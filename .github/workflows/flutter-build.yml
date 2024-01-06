@@ -230,7 +230,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: rustdesk-${{ env.VERSION }}-${{ matrix.job.arch }}.apk
-          path: ./rustdesk-${{ env.VERSION }}-${{ matrix.job.arch }}.apk
+          path: ./signed-apk/rustdesk-${{ env.VERSION }}-${{ matrix.job.arch }}.apk
 
   build-rustdesk-lib-linux-amd64:
     needs: [generate-bridge-linux]
