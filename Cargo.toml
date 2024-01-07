@@ -1,7 +1,7 @@
 [package]
 name = "rustdesk"
 version = "1.2.4"
-authors = ["rustdesk <info@rustdesk.com>"]
+authors = ["rustdesk <info@_>"]
 edition = "2021"
 build= "build.rs"
 description = "A remote control software."
@@ -70,7 +70,7 @@ num_cpus = "1.15"
 bytes = { version = "1.4", features = ["serde"] }
 default-net = "0.14"
 wol-rs = "1.0"
-flutter_rust_bridge = { version = "=1.80", features = ["uuid"], optional = true}
+flutter_rust_bridge = { version = "=1.75.3", features = ["uuid"], optional = true}
 errno = "0.3"
 rdev = { git = "https://github.com/fufesou/rdev" }
 url = { version = "2.3", features = ["serde"] }
