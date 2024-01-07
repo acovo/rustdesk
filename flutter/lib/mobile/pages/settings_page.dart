@@ -439,7 +439,7 @@ class _SettingsState extends State<SettingsPage> with WidgetsBindingObserver {
 
     return SettingsList(
       sections: [
-        SettingsSection(
+        /*SettingsSection(
           title: Text(translate('Account')),
           tiles: [
             SettingsTile(
@@ -456,7 +456,7 @@ class _SettingsState extends State<SettingsPage> with WidgetsBindingObserver {
               },
             ),
           ],
-        ),
+        ),*/
         SettingsSection(title: Text(translate("Settings")), tiles: [
           SettingsTile(
               title: Text(translate('ID/Relay Server')),
@@ -532,10 +532,10 @@ class _SettingsState extends State<SettingsPage> with WidgetsBindingObserver {
                     await launchUrl(Uri.parse(url));
                   }
                 },
-                title: Text(translate("Version: ") + version),
+                title: Text(translate("Version: ") + version+"@acovo"),
                 value: Padding(
                   padding: EdgeInsets.symmetric(vertical: 8),
-                  child: Text('rustdesk.com',
+                  child: Text('',
                       style: TextStyle(
                         decoration: TextDecoration.underline,
                       )),
@@ -559,8 +559,8 @@ class _SettingsState extends State<SettingsPage> with WidgetsBindingObserver {
                   leading: Icon(Icons.fingerprint)),
             SettingsTile(
               title: Text(translate("Privacy Statement")),
-              onPressed: (context) =>
-                  launchUrlString('https://rustdesk.com/privacy.html'),
+              //onPressed: (context) =>
+              //    launchUrlString('https://rustdesk.com/privacy.html'),
               leading: Icon(Icons.privacy_tip),
             )
           ],
