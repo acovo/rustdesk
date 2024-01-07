@@ -2,7 +2,7 @@
   "dependencies": [
     {
       "name": "aom",
-      "host": true
+      "host": false
     },
     {
       "name": "aom",
@@ -30,7 +30,7 @@
     },
     {
       "name": "opus",
-      "host": true
+      "host": false
     },
     {
       "name": "opus",
@@ -38,7 +38,7 @@
     },
     {
       "name": "libvpx",
-      "host": true
+      "host": false
     },
     {
       "name": "libvpx",
@@ -46,7 +46,7 @@
     },
     {
       "name": "libyuv",
-      "host": true
+      "host": false
     },
     {
       "name": "libyuv",
