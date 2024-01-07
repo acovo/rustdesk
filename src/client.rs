@@ -159,9 +159,9 @@ cfg_if::cfg_if! {
 use hbb_common::libc::{c_float, c_int};
 type Oboe = *mut c_void;
 extern "C" {
-    //fn create_oboe_player(channels: c_int, sample_rate: c_int) -> Oboe;
-    //fn push_oboe_data(oboe: Oboe, d: *const c_float, n: c_int);
-    //fn destroy_oboe_player(oboe: Oboe);
+    fn create_oboe_player(channels: c_int, sample_rate: c_int) -> Oboe;
+    fn push_oboe_data(oboe: Oboe, d: *const c_float, n: c_int);
+    fn destroy_oboe_player(oboe: Oboe);
 }
 
 struct OboePlayer {

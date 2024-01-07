@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.20)
 project(oboe_wrapper CXX)
 
 include(GNUInstallDirs)
+include_directories("/devops/3rdlib/vcpkg/installed/arm64-android/include")
 
 add_library(oboe_wrapper STATIC
     oboe.cc
